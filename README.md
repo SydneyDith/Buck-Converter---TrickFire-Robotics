@@ -11,7 +11,10 @@ Independently developed a 24V-12V buck converter using the TPS563300 IC designed
 ## Visuals
 ![Schematic Screenshot](images/schem.PNG)
 
-When designing the schematic for the buck, I prioritized 0603 
+To develop the buck converter schematic I frequently refered to the main operating ICs datasheet:
+[datasheet](https://www.ti.com/lit/ds/symlink/tps563300.pdf)
+
+
 
 ![PCB Layout](images/pcb.PNG)
 
