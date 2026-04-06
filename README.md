@@ -24,6 +24,7 @@ Based on the [datasheet](https://www.ti.com/lit/ds/symlink/tps563300.pdf), the f
 *  Kept the switching trace small and current loop small to minimize noise.
 *  Positioned the FB divider near the pin and away from noisy power traces.
 
+In my initial design, 
 
 
 ![PCB Layout 3D Render](images/pcbrender.PNG)
