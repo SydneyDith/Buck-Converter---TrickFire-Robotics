@@ -32,5 +32,7 @@ The followng image shows the 3D render of the PCB design above:
 
 ![PCB Layout 3D Render](images/buckconverterpcbrender.PNG)
 
+## Results
 
+![Soldered Buck](images/buck1.PNG) ![Soldered Buck](images/buck2.PNG)
 
