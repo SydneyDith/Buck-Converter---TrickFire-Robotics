@@ -6,13 +6,13 @@ Independently developed a 24V-12V buck converter using the TPS563300 IC designed
 | **Input Voltage** | 24V |
 | **Output Voltage** | 12V |
 | **Max Current** | 3A |
-| **Switching Freq** | 500kHz |
 
 ## Visuals
 ![Schematic Screenshot](images/schem.PNG)
 
-To develop the buck converter schematic I frequently refered to the main operating ICs datasheet:
-[datasheet](https://www.ti.com/lit/ds/symlink/tps563300.pdf)
+To develop the buck converter schematic I frequently refered to the main operating ICs datasheet: [datasheet](https://www.ti.com/lit/ds/symlink/tps563300.pdf)
+
+It provides formulas and specifications of the buck IC I used to develop this schematic. When selecting footprints for my components, I opted for 
 
 
 
