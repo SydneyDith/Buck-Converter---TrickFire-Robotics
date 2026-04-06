@@ -38,10 +38,9 @@ The followng image shows the 3D render of the PCB design above:
 
 
 ## Results
-
-| **Soldered Buck** | **Testing Soldered Buck** |
-| :---: | :---: |
-| ![Soldered Buck](images/buck2.JPG) | ![Soldered Buck](images/IMG_5143.JPG) |
+| **Soldered Buck** |
+| :---: |
+| <img src="images/buck2.JPG" width="550"> |
 
 When soldering the pcb, I found the greatest challenge was handsoldering the TPS563300 IC. It was about the size of two grains of rice side by side, and it was an 8 pin IC. However, with patience and some flux, I was able to solder the IC, esuring no shorts between legs. When soldering the big inductor, I found success in swapping my soldering iron's tip to a large chisel that transfered heat easily. The 0603 package parts were pretty straight forward. Using a fine gauge leaded solder made soldering these components easy.
 
@@ -53,7 +52,9 @@ When soldering the pcb, I found the greatest challenge was handsoldering the TPS
 Finally I was able to test my 24V-12V buck converter. As to not immediately damage the buck converter, I used a lab bench multimeter which has a very large internal resistance. When measuring the output voltage, I could ensure there would be a very small amount of current and could specifically measure the output voltage without the risk of damaging anything. I found 12.9V at the output, which seemed to be a good sign. This error could very well be attributed to component tolerances, inaccuracy in the IC, or filtering issues. If I desired a cleaner output, I would switch to more (expensive) tolerant resistors and improve input and output filtering.
 
 <br>
-<br>
+
 ## Conclussion
 
-My previous experience in pcb design had been in communication systems using the ATmega328p microcontroller and several sensors through I2C communication in my Heartrate Monitor Smartwatch. This project introduced me to basic power electronics and pcb deign strategies to employ when dealing with higher voltages and currents. In communication, 
+My previous experience in pcb design had been in communication systems using the ATmega328p microcontroller and several sensors through I2C communication in my Heartrate Monitor Smartwatch. However, this project introduced me to basic power electronics and pcb deign strategies to employ when dealing with higher voltages and currents. In communication, I was dealing with digital electronics and the goal was signal integrity to ensure data reached the sensors. In power electronics, however, traces will burn if they aren't wide enough for the current, components must be strictly rated for the voltage and current, and component placements can have a large impact on the electromagnetic interference. 
+
+This project has served as a great introduction to one of the many subfields of Electrical Engineering where I have been able to apply and expand upon class concepts. I can't wait to dive deeper into the world of power electronics for future projects.  
