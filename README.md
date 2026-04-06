@@ -34,7 +34,9 @@ The followng image shows the 3D render of the PCB design above:
 
 ## Results
 
-| Version 1.0 | Version 2.0 |
+| Soldered Buck | Testing Soldered Buck |
 | :---: | :---: |
-| ![Soldered Buck](images/IMG_5142.JPG) | ![Soldered Buck](images/buck2.JPG) |
+| ![Soldered Buck](images/buck2.JPG) | ![Soldered Buck](images/IMG_5143.JPG) |
+
+
 
