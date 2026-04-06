@@ -18,13 +18,12 @@ It provides formulas and specifications of the buck IC I used to develop this sc
 
 Based on the [datasheet](https://www.ti.com/lit/ds/symlink/tps563300.pdf), the following layout/placement strategies were employed:
 
-* **Integrated Power Path:** Placed the inductor, IC, and input/output capacitors on the **same layer** to minimize parasitic inductance.
-* **Minimized Switching Loops:** Positioned input and output capacitors as close as possible to the IC pins.
-* **High-Current Traces:** Utilized **wide VIN and GND traces** with redundant vias to reduce impedance and improve heat dissipation.
-* **EMI Suppression:** Dedicated **0.1µF decoupling capacitors** placed immediately adjacent to the VIN and GND pins.
-* **Optimized SW Node:** Kept the Switching (SW) trace as short and wide as practical to reduce radiated emissions.
-* **BST Network:** Located the BST capacitor and resistor near the BST/SW pins using **>10-mil** trace widths.
-* **Feedback Integrity:** Placed the feedback divider near the FB pin, isolated from high-voltage switching traces, and utilized a **ground shield** for the feedback loop.
+*  Placed IC, inductor, and caps on the same side of the board.
+*  Positioned input/output caps as close to the IC as possible.
+*  Placed 0.1µF decoupling caps directly next to the power pins.
+*  Kept the switching trace small and current loop small to minimize noise.
+*  Positioned the FB divider near the pin and away from noisy power traces.
+
 
 
 ![PCB Layout 3D Render](images/pcbrender.PNG)
