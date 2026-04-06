@@ -35,7 +35,7 @@ The followng image shows the 3D render of the PCB design above:
 | <img src="images/buckconverterpcbrender.PNG" width="600"> |
 
 <br>
-<br>
+
 
 ## Results
 
