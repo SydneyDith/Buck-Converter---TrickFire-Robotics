@@ -1,5 +1,5 @@
 # Buck-Converter---TrickFire-Robotics
-Independently developed a 24V-12V buck converter using the TPS563300 IC designed to operate at 3A. Performed calculations to find ideal component values for best performance while refering to the IC datasheet. Designed schematics and PCBs on KiCAD iterating through prototypes as I learned from mistakes.
+Independently developed a 24V-12V buck converter using the TPS563300 IC designed to operate at 3A for use in TrickFire Robotics power distribution system. Performed calculations to find ideal component values for best performance while refering to the IC datasheet. Designed schematics and PCBs on KiCAD iterating and refining prototypes as I learned from previous mistakes.
 
 | Parameter | Value |
 | :--- | :--- |
@@ -24,7 +24,8 @@ Based on the [datasheet](https://www.ti.com/lit/ds/symlink/tps563300.pdf), the f
 *  Kept the switching trace small and current loop small to minimize noise.
 *  Positioned the FB divider near the pin and away from noisy power traces.
 
-In my initial design, 
+In my initial design, I emphasized the placement stratigies listed above but once again failed to account for the 3A of current flowing through the buck. I used the default trace size of 0.2mm for my 24V input line when I should've used around 0.5mm to support 3A of current. With the 0.2mm trace, my buck could only provide less than an amp of current. I stumbled upon this issue when doing research about PCB design and learned that when dealing with power distribution systems, trace width and trace size really matters. Initially, this wasn't something that I emphasized enough. Below is my revised pcb where I increased the trace size 
+
 ![PCB Layout Prototype V1](images/pcb.PNG)
 
 ![PCB Layout 3D Render](images/pcbrender.PNG)
