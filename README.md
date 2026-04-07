@@ -53,7 +53,7 @@ Finally I was able to test my 24V-12V buck converter. As to not immediately dama
 
 <br>
 
-## Conclussion
+## Conclusion
 
 My previous experience in pcb design had been in communication systems using the ATmega328p microcontroller and several sensors through I2C communication in my Heartrate Monitor Smartwatch. However, this project introduced me to basic power electronics and pcb deign strategies to employ when dealing with higher voltages and currents. In communication, I was dealing with digital electronics and the goal was signal integrity to ensure data reached the sensors. In power electronics, however, traces will burn if they aren't wide enough for the current, components must be strictly rated for the voltage and current, and component placements can have a large impact on the electromagnetic interference. 
 
