@@ -24,7 +24,7 @@ Based on the [datasheet](https://www.ti.com/lit/ds/symlink/tps563300.pdf), the f
 *  Kept the switching trace small and current loop small to minimize noise.
 *  Positioned the FB divider near the pin and away from noisy power traces.
 
-In my initial design, I emphasized the placement strategies listed above but once again failed to account for the 3A of current flowing through the buck. I used the default trace size of 0.2mm for my 24V input line when I should've used around 0.5mm to support 3A of current. With the 0.2mm trace, my buck could only provide less than an amp of current. I stumbled upon this issue when doing research about PCB design and learned that when dealing with power distribution systems, trace width and trace size really matters. Initially, this wasn't something that I emphasized enough. Below is my revised pcb where I increased the trace size, adjusted placements, and created a ground plane:
+In my initial design, I emphasized the placement strategies listed above but once again failed to account for the 3A of current flowing through the buck. I used the default trace size of 0.2mm for my 24V input line when I should've used around 1.2mm to support the current. With the 0.2mm trace, my buck could only provide less than an amp of current. I stumbled upon this issue when doing research about PCB design and learned that when dealing with power distribution systems, trace width and trace size really matters. Initially, this wasn't something that I emphasized enough. Below is my revised pcb where I increased the trace size, adjusted placements, and created a ground plane:
 
 ![Final PCB Layout](images/buckconverterpcb.PNG)
 
